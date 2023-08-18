@@ -6,10 +6,12 @@ console.log(nameArray[5]);
 
 nameArray.push('rakesh');
 console.log(nameArray);
-//pop will delete the last element of the arrayf
+//pop will delete the last element of the arrayf   
 nameArray.pop();
 console.log(nameArray);
 
 //given task====================
 //write a program to add the element at the beginig of the array
 //write a program on every method of the array
+
+
