@@ -1,0 +1,18 @@
+class father {
+    city ='hyd';
+    getAddress(){
+        return `from city ${this.city}`;
+    }
+
+}
+class boy extends father{
+    name = 'ram';
+    age ='25';
+    city = 'bang';
+    getFather(){
+        return `${this.name} his age is ${this.age} is from ${this.city}`;
+    }
+}
+const b = new boy();
+console.log(b);// o/p { city: 'bang', name: 'ram', age: '25' }
+console.log(b.getFather());// o/p  ram his age is 25 is from bang
