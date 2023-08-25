@@ -18,4 +18,5 @@
       // if only one argument in function we can avoid () in arrow function like below
       const arr2 = num => num+num;
       console.log(arr2(5));// o/p 5
+//it new fie
       
