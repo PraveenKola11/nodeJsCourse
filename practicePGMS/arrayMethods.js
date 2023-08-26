@@ -1,4 +1,5 @@
 //arrays are one of the data structures in JS. to store more than one value we go to data structures
+//he
 const nameArray =['saurav','sumanth','srikanth',35,85.46,true,false];
 console.log(nameArray);
 console.log(nameArray.length)
