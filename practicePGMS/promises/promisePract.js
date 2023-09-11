@@ -27,9 +27,10 @@ order(2000,()=>console.log(`${stocks.fruits[1]} was selected`))
  })
 
  .then(()=>{
-    return order(2000,()=>console.log('the fruit was chopped'))
+    return order(1000,()=>console.log('the fruit was chopped'))
 
  })
+
  .then(()=>{
     return order(1000,()=>{
         console.log(`${stocks.liquid[0]}and ${stocks.liquid[1]} selected`)
