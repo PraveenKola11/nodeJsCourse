@@ -1,0 +1,12 @@
+
+.cards{
+display: flex;
+flex-direction: row;
+}
+.cardss{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 50px;
+margin-top: 50px;
+}
