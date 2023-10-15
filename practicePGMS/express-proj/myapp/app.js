@@ -6,10 +6,12 @@ var logger = require('morgan');
 const bodyParser = require('body-parser')
 
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const mobileRouter = require('./routes/mobileRouter.js');
-const postRouter = require('./routes/postRouter')
+const postRouter = require('./routes/postRouter'); 
+const formRouter = require('./routes/formRouter');
 var app = express();
 
 // view engine setup
@@ -24,13 +26,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
- 
+
 
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.get('/mobileDetails',mobileRouter);
 app.get('/mobileDetails/:name',mobileRouter);
+app.get('/getForm',formRouter);
+app.get('/postRegDetails',formRouter);
+
 app.post('/addName',postRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
