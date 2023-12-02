@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+//const sql = require('mssql')
 /* GET users listing. */
 router.get('/getForm', function(req, res, next) {
   res.render('showForm');

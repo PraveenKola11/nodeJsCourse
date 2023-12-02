@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            table, th, td
+             {
+              border:1px solid rgb(138,12,12);
+              border-collapse:collapse;
+
+            }
+            th,td{
+                background-color: #d91eb0;
+            }
+        </style>
+        </head>
+        <body>
+            <li><a  href = '/openForm'>Click to Add New Data</a><br></li>
+            <form  method = 'GET' id = 'form' action = '/getData' >
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Place</th>
+                        <th>Role</th>
+                        <th>MobileNum</th>
+                    </tr>
+                    <% for (let i =0; i <data.length; i++)
+                    {
+                        %>
+                        <tr>
+                            <td style = "color:rgb(0,21,255)"><%=data[i].Name%></td>
+                            <td><%=data[i].Email%></td>
+                            <td><%=data[i].Place%></td>
+                            <td><%=data[i].Role%></td>
+                            <td><%=data[i].MobileNum%></td>
+                        </tr>
+                  <%  } %>
+                </table>
+            </form>
+        </body>
+</html>
